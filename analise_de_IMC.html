@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula e analisa IMC</title>
+</head>
+<body>
+    <script>
+    
+    let idade = prompt("Qual a sua idade. Vamo ve se ta velho?");
+    let altura = prompt ("Qual a sua altura, meu nobre?");
+    let peso = prompt ("Qual seria o seu peso, meu caro consagrado?");
+
+    function calcularIMC(peso, altura){
+            return (peso/(altura*altura)).toFixed(0);
+    }
+
+    let imc = calcularIMC(peso, altura);
+    document.write("Seu IMC é " + imc);
+
+    
+
+    
+
+
+
+</script>
+
+    
+</body>
+</html>

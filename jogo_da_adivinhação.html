@@ -5,16 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Adivinhação</title>
 </head>
-<body>
-<script> 
-
  
- let numeroAleatorio = Math.random()*10;
-     let numeroAleatorioInteiro = Math.round(numeroAleatorio);
-     document.write(numeroAleatorioInteiro);
-</script>
-    
-
 
 <center>
     
@@ -26,6 +17,32 @@
  <center>
     <p>Coloque um número de um a dez</p>
  </center>
+
+
+<script> 
+ 
+ 
+ let numeroAleatorio = Math.random()*10;
+     let numeroAleatorioInteiro = Math.round(numeroAleatorio);
+     //document.write(numeroAleatorioInteiro);
+
+     let resposta = prompt("Digite um número de o a 10");
+
+     if(resposta == numeroAleatorioInteiro){
+        document.write("Parabéns! Você adivinhou! ")
+     }else{
+        
+        document.write("Você errou¯\_(ツ)_/¯ ! O número que eu pensei era  " +
+        
+        +numeroAleatorioInteiro);
+
+    
+
+     }
+       
+</script>
+    
+
 
 
 
