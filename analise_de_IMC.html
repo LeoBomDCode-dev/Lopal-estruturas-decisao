@@ -8,18 +8,31 @@
 <body>
     <script>
     
-    let idade = prompt("Qual a sua idade. Vamo ve se ta velho?");
-    let altura = prompt ("Qual a sua altura, meu nobre?");
-    let peso = prompt ("Qual seria o seu peso, meu caro consagrado?");
+    let idade = parseFloat(prompt("Qual a sua idade. Vamo ve se ta velho?"));
+    let altura = parseFloat(prompt ("Qual a sua altura, meu nobre?"));
+    let peso = parseFloat(prompt ("Qual seria o seu peso, meu caro consagrado?"));
 
-    function calcularIMC(peso, altura){
-            return (peso/(altura*altura)).toFixed(0);
+    let imc = peso/ (altura*altura)
+   
+
+    if (imc >= 18.5 && imc <= 35) {
+         alert(`Boa meu nobre, você esta nos conformes👌, Seu IMC é ${imc.toFixed(2)}.`);
+    }else if (imc < 18.5) {
+         alert("Ta só o pó em parceiro🫢, seu IMC indica que você esta abaixo d peso!");
+    }else { (imc < 35)
+         alert("Vamo Pra uma esterinha meu baleio🐋, seu IMC indica que você esta acima do peso!"); 
     }
 
-    let imc = calcularIMC(peso, altura);
-    document.write("Seu IMC é " + imc);
 
-    
+    // if (imc >= 18.5 && imc <= 35){
+    // prompt("Seu IMC significa que você esta com o IMC abaixo, ta só o pó")
+    //}else if(imc >= 18.5 && imc <= 35){
+     //prompt("Parabéns, você esta nos conformes meu nobre👌")
+   // }else if(imc >= 35 && imc){
+    // prompt("Seu IMC significa que você esta  acima do peso, vamo pra esteira meu nobre.")
+    //}else (imc >= 35  )
+
+
 
     
 
